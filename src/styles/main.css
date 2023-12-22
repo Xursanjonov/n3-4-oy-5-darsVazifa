@@ -1,0 +1,3 @@
+.card .threColor p:nth-child(3):hover {
+    background-color: yellow;
+}

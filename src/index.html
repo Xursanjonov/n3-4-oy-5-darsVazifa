@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="/dist/output.css" rel="stylesheet" />   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/main.css">
+
+    <title> Hekto Figma </title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header" class="hidden">
+        <div class="flex items-center text-white bg-violet-600 justify-around">
+            <div class="left flex items-center py-3 text-lg gap-4 font-medium">
+                <p><i class="fa-regular fa-envelope"></i> mhhasanul@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> (12345)67890</p>
+            </div>
+            <div class="right flex font-medium text-lg items-center gap-6">
+                <select id="eng" class="bg-transparent p-2 text-md" name="uz">
+                    <option class="bg-gray-600" value="eng">English</option>
+                    <option class="bg-gray-600" value="uz">Uzbek</option>
+                    <option class="bg-gray-600" value="ru">Rus</option>
+                </select>
+                <select id="valyuta" class="bg-transparent p-2" name="uz">
+                    <option class="bg-gray-600" value="eng">USD</option>
+                    <option class="bg-gray-600" value="uz">US</option>
+                    <option class="bg-gray-600" value="ru">ER</option>
+                </select>
+                <a href="">Login <i class="fa-solid fa-user"></i></a>
+                <h5>Wishlist <i class="fa-regular fa-heart"></i></h5>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+        <nav class="mx-44 mt-3 flex items-center ">
+            <a class="font-bold text-3xl" href="/src/home.html">Hekto</a>
+            <select id="home" class="mt-2" name="home">
+                <option class="text-red-500" value="home">Home</option>
+                <option value="pages">Pages</option>
+                <option value="products">Products</option>
+                <option value="blog">Blog</option>
+                <option value="shop">Shop</option>
+                <option value="contact">Contact</option>
+            </select>
+            <div class="aTeg flex items-center gap-5">
+                <a href="">Pages</a>
+                <a href="">Products</a>
+                <a href="">Blog</a>
+                <a href="">Shop</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="search">
+                <input class="bg-gray-300 py-1 mt-1" type="search" name="search" id="search">
+                <i class="fa-solid fa-search text-white absolute ms-0text-lg py-2 mt-1 px-2 bg-red-600"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main -->
+    <Main id="main"></Main>
+    <!-- Main end -->
+
+    <!-- Featured Products -->
+    <section id="featured" class="mt-5 hidden">
+        <div class="container">
+            <h1 class="font-bold text-center text-4xl">Featured Products</h1>
+            <div class="flex w-[75%] mx-auto mt-9 items-center justify-between sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">    
+                <div class="w-64 hover:bg-blue-700 hover:text-white text-blue-500 hover:shadow-lg hover:shadow-gray-600 pb-3 flex items-center flex-col">
+                    <p class="bg-gray-200 flex justify-center w-[100%] h-[200px]">
+                        <img class="w-44 p-4" src="/src/images/Featured/image 1.png" alt="image 1">
+                        <p id="hovers1" class="bg-green-500 hidden px-3 py-1 absolute mt-[168px] rounded-md text-white text-sm">View Details</p>
+                        <div id="hovers2" class="hoverIcons hidden w-56 mt-2 items-center gap-2 absolute">
+                            <i class="fa-solid text-blue-700 rounded-full p-2 bg-gray-300 fa-cart-shopping"></i>
+                            <i class="fa-regular text-blue-500 fa-heart"></i>
+                            <i class="fa-solid text-blue-500 fa-magnifying-glass"></i>
+                        </div>
+                    </p>
+                    <h3 class="text-red-600 mt-3 text-xl font-medium">Cantilever chair</h3>
+                    <div class="threColor mt-3 flex items-center gap-3">
+                        <p class="py-0.5 rounded-3xl px-2 bg-green-400"></p>
+                        <p class="py-0.5 rounded-3xl px-2 bg-red-500"></p>
+                        <p class="py-0.5 rounded-3xl px-2 bg-blue-600"></p>
+                    </div>
+                    <p class="mt-2 font-medium">Code - Y523201</p>
+                    <p class="mb-2 font-medium">$42.00</p>
+                </div>
+                <div class="w-64 hover:bg-blue-700 hover:text-white text-blue-500 hover:shadow-lg hover:shadow-gray-600 pb-3 flex items-center flex-col">
+                    <p class="bg-gray-200 flex justify-center w-[100%] h-[200px]">
+                        <img class="w-44 p-4" src="/src/images/Featured/image 2.png" alt="image 1">
+                        <p id="hovers1" class="bg-green-500 hidden px-3 py-1 absolute mt-[168px] rounded-md text-white text-sm">View Details</p>
+                        <div id="hovers2" class="hoverIcons hidden w-56 mt-2 items-center gap-2 absolute">
+                            <i class="fa-solid text-blue-700 rounded-full p-2 bg-gray-300 fa-cart-shopping"></i>
+                            <i class="fa-regular text-blue-500 fa-heart"></i>
+                            <i class="fa-solid text-blue-500 fa-magnifying-glass"></i>
+                        </div>
+                    </p>
+                    <h3 class="text-red-600 mt-3 text-xl font-medium">Cantilever chair</h3>
+                    <div class="threColor mt-3 flex items-center gap-3">
+                        <p class="py-0.5 rounded-3xl px-2 bg-green-400"></p>
+                        <p class="py-0.5 rounded-3xl px-2 bg-red-500"></p>
+                        <p class="py-0.5 rounded-3xl px-2 bg-blue-600"></p>
+                    </div>
+                    <p class="mt-2 font-medium">Code - Y523201</p>
+                    <p class="mb-2 font-medium">$42.00</p>
+                </div>
+                <div class="w-64 hover:bg-blue-700 hover:text-white text-blue-500 hover:shadow-lg hover:shadow-gray-600 pb-3 flex items-center flex-col">
+                    <p class="bg-gray-200 flex justify-center w-[100%] h-[200px]">
+                        <img class="w-44 p-4" src="/src/images/Featured/image 3.png" alt="image 1">
+                        <p id="hovers1" class="bg-green-500 hidden px-3 py-1 absolute mt-[168px] rounded-md text-white text-sm">View Details</p>
+                        <div id="hovers2" class="hoverIcons hidden w-56 mt-2 items-center gap-2 absolute">
+                            <i class="fa-solid text-blue-700 rounded-full p-2 bg-gray-300 fa-cart-shopping"></i>
+                            <i class="fa-regular text-blue-500 fa-heart"></i>
+                            <i class="fa-solid text-blue-500 fa-magnifying-glass"></i>
+                        </div>
+                    </p>
+                    <h3 class="text-red-600 mt-3 text-xl font-medium">Cantilever chair</h3>
+                    <div class="threColor mt-3 flex items-center gap-3">
+                        <p class="py-0.5 rounded-3xl px-2 bg-green-400"></p>
+                        <p class="py-0.5 rounded-3xl px-2 bg-red-500"></p>
+                        <p class="py-0.5 rounded-3xl px-2 bg-blue-600"></p>
+                    </div>
+                    <p class="mt-2 font-medium">Code - Y523201</p>
+                    <p class="mb-2 font-medium">$42.00</p>
+                </div>
+                <div class="w-64 hover:bg-blue-700 hover:text-white text-blue-500 hover:shadow-lg hover:shadow-gray-600 pb-3 flex items-center flex-col">
+                    <p class="bg-gray-200 flex justify-center w-[100%] h-[200px]">
+                        <img class="p-4" src="/src/images/Featured/image 4.png" alt="image 1">
+                        <p id="hovers1" class="bg-green-500 hidden px-3 py-1 absolute mt-[168px] rounded-md text-white text-sm">View Details</p>
+                        <div id="hovers2" class="hoverIcons hidden w-56 mt-2 items-center gap-2 absolute">
+                            <i class="fa-solid text-blue-700 rounded-full p-2 bg-gray-300 fa-cart-shopping"></i>
+                            <i class="fa-regular text-blue-500 fa-heart"></i>
+                            <i class="fa-solid text-blue-500 fa-magnifying-glass"></i>
+                        </div>
+                    </p>
+                    <h3 class="text-red-600 mt-3 text-xl font-medium">Cantilever chair</h3>
+                    <div class="threColor mt-3 flex items-center gap-3">
+                        <p class="py-0.5 rounded-3xl px-2 bg-green-400"></p>
+                        <p class="py-0.5 rounded-3xl px-2 bg-red-500"></p>
+                        <p class="py-0.5 rounded-3xl px-2 bg-blue-600"></p>
+                    </div>
+                    <p class="mt-2 font-medium">Code - Y523201</p>
+                    <p class="mb-2 font-medium">$42.00</p>
+                </div>
+            </div>
+            <div class="limeFour flex items-center justify-center mt-16 gap-3">
+                <p class="bg-pink-300 hover:bg-red-500 px-3 hover:px-4 active:px-4 py-1 rounded-md"></p>
+                <p class="bg-pink-300 hover:bg-red-500 px-3 hover:px-4 active:px-4 py-1 rounded-md"></p>
+                <p class="bg-pink-300 hover:bg-red-500 px-3 hover:px-4 active:px-4 py-1 rounded-md"></p>
+                <p class="bg-pink-300 hover:bg-red-500 px-3 hover:px-4 active:px-4 py-1 rounded-md"></p>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Products end -->
+
+    <!-- Leatest Products -->
+    <section id="leatest" class="mt-14 hidden">
+        <div class="w-[80%] py-5 px-3 mx-auto">
+            <h1 class="text-4xl font-bold text-center">Leatest Products</h1>
+            <ul class="flex items-center gap-5 justify-center mt-6">
+                <a class="text-blue-500 hover:text-red-500 hover:border-b-2 hover:border-red-500 font-medium" href="">New Arrival</a>
+                <a class="text-blue-500 hover:text-red-500 hover:border-b-2 hover:border-red-500 font-medium" href="">Best Seller</a>
+                <a class="text-blue-500 hover:text-red-500 hover:border-b-2 hover:border-red-500 font-medium" href="">Featured</a>
+                <a class="text-blue-500 hover:text-red-500 hover:border-b-2 hover:border-red-500 font-medium" href="">Special Offer</a>
+            </ul>
+            <div class="my-10 grid gap-16 grid-cols-3 grid-rows-2">
+                <div class="col-span-1 hover:shadow-md hover:shadow-gray-500 px-2 w-[85%] h-60 flex flex-col items-center justify-center bg-white">
+                    <img class="w-[60%]" src="images/Leatest/image 1.png" alt="">
+                    <div class="w-[100%] px-2 mt-6 flex justify-between items-center font-medium text-blue-500">
+                        <h4>Comfort Handy Craft</h4>
+                        <p>$42.00</p>
+                        <p><s class="text-red-400">$65.00</s></p>
+                    </div>
+                </div>
+                <div class="col-span-1 hover:shadow-md hover:shadow-gray-500 px-2 w-[85%] h-60 flex flex-col items-center justify-center bg-white">
+                    <img class="w-[60%]" src="images/Leatest/image 2.png" alt="">
+                    <div class="w-[100%] px-2 mt-6 flex justify-between items-center font-medium text-blue-500">
+                        <h4>Comfort Handy Craft</h4>
+                        <p>$42.00</p>
+                        <p><s class="text-red-400">$65.00</s></p>
+                    </div>
+                </div>
+                <div class="col-span-1 hover:shadow-md hover:shadow-gray-500 px-2 w-[85%] h-60 flex flex-col items-center justify-center bg-white">
+                    <img class="w-[60%]" src="images/Leatest/image 3.png" alt="">
+                    <div class="w-[100%] px-2 mt-6 flex justify-between items-center font-medium text-blue-500">
+                        <h4>Comfort Handy Craft</h4>
+                        <p>$42.00</p>
+                        <p><s class="text-red-400">$65.00</s></p>
+                    </div>
+                </div>
+                <div class="col-span-1 hover:shadow-md hover:shadow-gray-500 px-2 w-[85%] h-60 flex flex-col items-center justify-center bg-white">
+                    <img class="w-[60%]" src="images/Leatest/image 4.png" alt="">
+                    <div class="w-[100%] px-2 mt-6 flex justify-between items-center font-medium text-blue-500">
+                        <h4>Comfort Handy Craft</h4>
+                        <p>$42.00</p>
+                        <p><s class="text-red-400">$65.00</s></p>
+                    </div>
+                </div>
+                <div class="col-span-1 hover:shadow-md hover:shadow-gray-500 px-2 w-[85%] h-60 flex flex-col items-center justify-center bg-white">
+                    <img class="w-[60%]" src="images/Leatest/image 5.png" alt="">
+                    <div class="w-[100%] px-2 mt-6 flex justify-between items-center font-medium text-blue-500">
+                        <h4>Comfort Handy Craft</h4>
+                        <p>$42.00</p>
+                        <p><s class="text-red-400">$65.00</s></p>
+                    </div>
+                </div>
+                <div class="col-span-1 hover:shadow-md hover:shadow-gray-500 px-2 w-[85%] h-60 flex flex-col items-center justify-center bg-white">
+                    <img class="w-[60%]" src="images/Leatest/image 6.png" alt="">
+                    <div class="w-[100%] px-2 mt-6 flex justify-between items-center font-medium text-blue-500">
+                        <h4>Comfort Handy Craft</h4>
+                        <p>$42.00</p>
+                        <p><s class="text-red-400">$65.00</s></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Leatest Products end -->
+
+    <!-- What Shopex Offer! -->
+    <section id="whatShopex" class="mt-14 hidden">
+        <div class="w-[80%] mx-auto pb24 bg-transparent">
+            <h1 class="font-bold text-center py-8 text-4xl">What Shopex Offer!</h1>
+            <div class="grid ms-6 pb-24 pt-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+                <div class="col-span-1 text-center hover:shadow-lg hover:shadow-black bg-gray-100 flex flex-col items-center p-6 w-[90%]">
+                    <img class="w-[40%]" src="images/WhatShopex/image 1.png" alt="">
+                    <div class="mt-6">
+                        <h4 class="font-medium text-2xl text-blue-500">24/7 Support</h4>
+                        <p class="mt-3 text-gray-400 font-medium">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> Massa purus gravida.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 text-center hover:shadow-lg hover:shadow-black bg-gray-100 flex flex-col items-center p-6 w-[90%]">
+                    <img class="w-[40%]" src="images/WhatShopex/image 2.png" alt="">
+                    <div class="mt-6">
+                        <h4 class="font-medium text-2xl text-blue-500">24/7 Support</h4>
+                        <p class="mt-3 text-gray-400 font-medium">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> Massa purus gravida.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 text-center hover:shadow-lg hover:shadow-black bg-gray-100 flex flex-col items-center p-6 w-[90%]">
+                    <img class="w-[40%]" src="images/WhatShopex/image 3.png" alt="">
+                    <div class="mt-6">
+                        <h4 class="font-medium text-2xl text-blue-500">24/7 Support</h4>
+                        <p class="mt-3 text-gray-400 font-medium">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> Massa purus gravida.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 text-center hover:shadow-lg hover:shadow-black bg-gray-100 flex flex-col items-center p-6 w-[90%]">
+                    <img class="w-[40%]" src="images/WhatShopex/image 4.png" alt="">
+                    <div class="mt-6">
+                        <h4 class="font-medium text-2xl text-blue-500">24/7 Support</h4>
+                        <p class="mt-3 text-gray-400 font-medium">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> Massa purus gravida.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- What Shopex Offer! end -->
+
+    <!-- Unique Features Of leatest & Trending Poducts -->
+    <section id="unique"></section>
+    <!-- Unique Features Of leatest & Trending Poducts end -->
+
+    <!-- Trending Products -->
+    <section id="trending"></section>
+    <!-- Trending Products end -->
+
+    <!-- Discount Item -->
+    <section id="discount"></section>
+    <!-- Discount Item end -->
+
+    <!-- Top Categories -->
+    <section id="categories"></section>
+    <!-- Top Categories end -->
+
+    <!-- Get Leatest Update By Subscribe 0ur Newslater -->
+    <section id="getUpdate"></section>
+    <!-- Get Leatest Update By Subscribe 0ur Newslater end -->
+
+    <!-- Brands -->
+    <section id="brands"></section>
+    <!-- Brands -->
+
+    <!-- Frequently Asked Questions -->
+    <section id="frequetly"></section>
+    <!-- Frequently Asked Questions end -->
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+    <!-- Footer end -->
+    
+</body>
+</html>

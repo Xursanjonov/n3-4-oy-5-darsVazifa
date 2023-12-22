@@ -1,0 +1,8 @@
+@tailwind base;
+@layer base {
+  html {
+    font-family: Josefin Sans, sans-serif, sans-serif;
+  }
+}
+@tailwind components;
+@tailwind utilities;
