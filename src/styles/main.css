@@ -1,3 +1,16 @@
-.card .threColor p:nth-child(3):hover {
+#hero-absolute {
+    margin-top: -300px;
+}
+
+.card:hover #hovers1 {
+    display: block; 
+}
+
+.card:hover #hovers2 {
+    background-color: transparent;
+    display: block; 
+}
+
+.card:hover .threColor > p:nth-child(3) {
     background-color: yellow;
 }
