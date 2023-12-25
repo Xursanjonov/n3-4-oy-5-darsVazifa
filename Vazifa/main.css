@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.products,
+.cart {
+  border: 2.5px solid red;
+}
+
+button {
+  cursor: pointer;
+}
+
+.card {
+  padding: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 30px;
+  border: 2.5px solid red;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
