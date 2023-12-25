@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.accardion {
+    background-color: gray;
+    display: grid;grid-template-rows: 3fr 0fr;
+    overflow: hidden;
+    transition: .4s linear;
+}
+
+.accardion__title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 14px;
+    background-color: #0000ffa7;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.accardion__content {
+    overflow: hidden;
+}
+
+.accardion__black {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.active {
+    grid-template-rows: 3fr 1fr;
+}
